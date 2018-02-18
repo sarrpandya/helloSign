@@ -65,9 +65,25 @@ public class AmazonUI_POM {
 
 	@FindBy(xpath = ".//*[@id='nav-logo']/a[1]/span[1]")
 	WebElement selectAmazonHome;
-	
-	
-	
+
+	@FindBy(xpath = ".//*[@id='twotabsearchtextbox']")
+	WebElement searchBox;
+
+	@FindBy(xpath = ".//*[@id='nav-search']/form/div[2]/div/input")
+	WebElement clickSearchButton;
+
+	@FindBy(xpath = ".//*[@id='s-result-count']/span/span")
+	WebElement guitarSearchResult;
+
+	@FindBy(xpath = ".//*[@id='leftNavContainer']/ul[1]/div/li[1]/span/ul/div/li[2]/span/a/span")
+	WebElement leftPaneElectricGuitar;
+
+	@FindBy(xpath = ".//*[@id='leftNavContainer']/ul[1]/div/li[1]/span/ul/div/li[4]/span/a/span")
+	WebElement leftPaneBeginnerKit;
+
+	@FindBy(xpath = ".//*[@id='leftNavContainer']/ul[1]/div/li[2]/span/ul/div/li[2]/span/a/span")
+	WebElement leftPaneKidsGuitar;
+
 	public AmazonUI_POM(WebDriver driver) {
 
 		this.driver = driver;
@@ -133,9 +149,31 @@ public class AmazonUI_POM {
 	public String getpadelSteelTitle() {
 		return padelSteelGuitar.getText().toString();
 	}
-	
+
 	public void selectAmazonHome() {
 		selectAmazonHome.click();
 	}
 
+	public void searchInAmazonHome(String searchText) throws InterruptedException {
+		searchBox.clear();
+		Reporter.log("clear and send text searchbox");
+		searchBox.sendKeys(searchText);
+		searchBox.sendKeys(Keys.ENTER);
+	}
+
+	public String getEGuitarSeachResultTitle() {
+		return guitarSearchResult.getText().toString();
+	}
+
+	public String getLeftPaneEGuitarTitle() throws InterruptedException {
+		return leftPaneElectricGuitar.getText().toString();
+	}
+
+	public String getLeftPaneEGBegineerKitTitle() {
+		return leftPaneBeginnerKit.getText().toString();
+	}
+
+	public String getKidsGuitarTitle() {
+		return leftPaneKidsGuitar.getText().toString();
+	}
 }

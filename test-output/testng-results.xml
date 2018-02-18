@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[search Electric Guitars in searchBox]]>
+    </line>
+    <line>
+      <![CDATA[clear and send text searchbox]]>
+    </line>
+    <line>
+      <![CDATA[validate  Left Pane Electric guitar title in amazon]]>
+    </line>
+    <line>
+      <![CDATA[validate  Left Pane Solid Body Electric guitar title in amazon]]>
+    </line>
+    <line>
+      <![CDATA[validate left pane Electric guitar beginner kit title in amazon]]>
+    </line>
+    <line>
+      <![CDATA[validate Kids Electric guitar title in amazon]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6025" started-at="2018-02-18T03:32:20Z" finished-at="2018-02-18T03:32:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6025" started-at="2018-02-18T03:32:20Z" finished-at="2018-02-18T03:32:26Z">
+      <class name="com.hellosign.test.UITests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.hellosign.test.UITests@754ba872]" name="beforeClass" is-config="true" duration-ms="4896" started-at="2018-02-17T19:32:20Z" finished-at="2018-02-17T19:32:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="searchInElectricGuitarsFromAmazonSearch()[pri:2, instance:com.hellosign.test.UITests@754ba872]" name="searchInElectricGuitarsFromAmazonSearch" duration-ms="1120" started-at="2018-02-17T19:32:25Z" description="verify Electric Guitars with search feature in Amazon" finished-at="2018-02-17T19:32:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[search Electric Guitars in searchBox]]>
+            </line>
+            <line>
+              <![CDATA[clear and send text searchbox]]>
+            </line>
+            <line>
+              <![CDATA[validate  Left Pane Electric guitar title in amazon]]>
+            </line>
+            <line>
+              <![CDATA[validate  Left Pane Solid Body Electric guitar title in amazon]]>
+            </line>
+            <line>
+              <![CDATA[validate left pane Electric guitar beginner kit title in amazon]]>
+            </line>
+            <line>
+              <![CDATA[validate Kids Electric guitar title in amazon]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchInElectricGuitarsFromAmazonSearch -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.hellosign.test.UITests@754ba872]" name="teardown" is-config="true" duration-ms="221" started-at="2018-02-17T19:32:26Z" finished-at="2018-02-17T19:32:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.hellosign.test.UITests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
