@@ -5,7 +5,7 @@
 
 OR
 
-3.Right click run as testNG of UITests / BackendTest or Run testng.xml file
+3.Right click run as testNG of UITests(make sure you pass -DenvName=qa in VM argument)/ BackendTest(just to demonstrate validation of 200 status code using apache http client library) or Run testng.xml file
 
 
 # How to see Test Results
