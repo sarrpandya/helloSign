@@ -1,7 +1,10 @@
 # How to Run Tests in Local Machine
 1.Clone git url into your local Mac machine or import directly into eclipse
+
 2.Open Terminal and Type "mvn clean install -DenvName=qa" command (where I have store amazon url under property file just to demonstrate dynemic url )  
+
 OR
+
 3.Right click run as testNG of UITests / BackendTest or Run testng.xml file
 
 
@@ -10,7 +13,9 @@ OR
 
 # Solution Approach
 1.I have Used Page Object model framework where I have store all the web elements location in separated class with necessary method
+
 2.I have Kept Test Class separated where I have written all test validation.
+
 3.I have added small Test case to validate 200 Response status of Amazon under backedTest Java file
 
 # Note : This tests has mouseover events so please dont hover your mouse in browser while running the tests
